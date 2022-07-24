@@ -1,0 +1,18 @@
+<%- include('partials/nav') %>
+
+<div class="min-h-[80vh] flex justify-center items-center flex-col gap-10">
+    <br>
+        <!-- ejs for each data -->
+        <% data.forEach(function(dees){ %>
+        <div class="p-5 rounded-lg min-w-full flex gap-5 bg-[#ffff] flex-col">
+            <p class="text-xl text-[#c1c1bf]"><i class="fa-solid fa-globe pr-2"></i><%= dees.service %></p>
+            <hr>
+            <p class="text-sm"><%= dees.username %></p>
+            <p class="text-sm"><%= dees.password %></p>
+        </div>
+        <% }) %>
+    <br>
+</div>
+
+
+<%- include('partials/foot') %>

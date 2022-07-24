@@ -1,0 +1,18 @@
+<%- include('partials/nav') %>
+    <!-- login form -->
+    <div class="h-[80vh] flex justify-center items-center flex-col">
+        <% if (messages.error) { %>
+            <div class="bg-[#f2faf9] text-red-600 font-normal rounded-lg px-4 py-3 text-xs font-jet-mono shadow-md" role="alert">
+                <i class="fa-solid fa-triangle-exclamation pr-2"></i><%= messages.error %><i class="fa-solid fa-triangle-exclamation pl-2"></i>
+            </div>
+          <br>
+          <% } %>
+        <form action="/login" method="post" class="md:w-[25%] flex flex-col gap-5">
+            <input class="border-2 h-10 rounded-lg border-[#DFDFDE] bg-[#F5F5F5] p-1" placeholder="Email" type="email" name="email" required>
+            <input class="border-2 h-10 rounded-lg border-[#DFDFDE] bg-[#F5F5F5] p-1" placeholder="Password" type="password" name="password" required>
+            <button class="p-2 bg-[#3AB0FF] rounded-lg text-white text-lg font-jet-mono uppercase" type="submit">Submit</button>
+        </form>
+        <br>
+        <p>Dont have an account? Click <a class="text-[#3AB0FF]" href="/signup">here</a> to make one.</p>
+    </div>
+<%- include('partials/foot') %>

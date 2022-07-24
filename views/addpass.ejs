@@ -1,0 +1,15 @@
+<%- include('partials/nav') %>
+    <div class="box min-h-[80vh] flex justify-center items-center">
+        <form action="/save" method="post" class="flex flex-col gap-10 md:w-[25%]">
+            <br>
+            <input class="border-2 h-10 rounded-lg border-[#DFDFDE] bg-[#F5F5F5] p-1" placeholder="Service" type="text" name="service" required>
+            <input class="border-2 h-10 rounded-lg border-[#DFDFDE] bg-[#F5F5F5] p-1" placeholder="Username/Email" type="text" name="username" required>
+            <input class="border-2 h-10 rounded-lg border-[#DFDFDE] bg-[#F5F5F5] p-1" placeholder="Password" type="text" name="password" required>
+            <div class="flex items-center mb-4">
+                <input id="checkbox-1" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" required>
+                <label for="checkbox-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree that password keeper is a demonstrational project and password keeper is not responsible for any kind of security to passwords.</label>
+            </div>
+            <button class="p-2 bg-[#3AB0FF] rounded-lg text-white text-lg font-jet-mono uppercase" type="submit">Submit</button>                
+        </form>
+    </div>
+<%- include('partials/foot') %>
