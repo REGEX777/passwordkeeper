@@ -11,7 +11,7 @@ const LocalStrategy = require('passport-local').Strategy;
 const flash = require('express-flash');
 
 //mongoose connection
-mongoose.connect('mongodb://localhost:27017/passwordDB', {useNewUrlParser: true},function(err){
+mongoose.connect(process.env.URI, {useNewUrlParser: true},function(err){
     if(err){
         console.log("❗ | "+err.red);
     }else{
