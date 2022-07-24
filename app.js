@@ -126,7 +126,7 @@ passport.use(
         res.redirect('/');
     }
 //APP PORT
-const port = 3000 || process.env.PORT;
+const port = process.env.PORT || 3000;
 
 
 app.get('/', function(res,res){
