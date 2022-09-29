@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "build-css": "npx tailwindcss -i ./public/input.css -o ./public/output.css --watch"
+    "build-css": "npx tailwindcss -i ./public/input.css -o ./public/output.css --watch",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
